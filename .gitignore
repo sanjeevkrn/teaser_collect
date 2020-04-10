@@ -1,0 +1,4 @@
+app/resources/
+.idea
+__pycache__
+*resources

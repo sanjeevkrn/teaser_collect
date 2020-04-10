@@ -1,0 +1,12 @@
+#!/bin/bash
+
+TIMESTAMP=`date +%Y%m%d-%H%M%S`
+CMD="twitter_read_stream -o /data/twitter_data_${TIMESTAMP}.json -e /data/twitter_data_html_${TIMESTAMP}.json -c /auth/twitter_auth.conf -l twitter.log -p"
+
+echo ${CMD}
+
+until `${CMD}` ; do
+    echo "process crashed with exit code $?.  Respawning.." >&2
+    sleep 5
+done
+

@@ -1,0 +1,11 @@
+#!/bin/bash
+
+CMD="twitter_read_stream -o twitter_data_20170118.json -c src/main/python/twitter_data_collection/etc/my_twitter_auth.conf -l twitter.log -p"
+
+echo ${CMD}
+
+until `${CMD}` ; do
+    echo "process crashed with exit code $?.  Respawning.." >&2
+    sleep 5
+done
+

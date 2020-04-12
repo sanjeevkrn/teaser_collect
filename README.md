@@ -60,7 +60,7 @@ We recommend to execute each region of code inside method main individually.
 ```
 python study_of_data.py -i some_volume/data_tweet.pkl -o some_volume/processed_dataset
 ```
-### our NAACL train, eval and test dataset are at:
+### our NAACL 2019 train, eval and test dataset are at:
 https://s3-eu-west-1.amazonaws.com/teasers.naacl19/teaser_base_naacl19.tar.gz
 
 To train baseline system, please check [this repository](https://github.com/sanjeevkrn/teaser_generate).
@@ -84,5 +84,6 @@ For more details, check out our paper:
     url = "https://www.aclweb.org/anthology/N19-1398",
     doi = "10.18653/v1/N19-1398",
     pages = "3967--3977",
+    abstract = "In this work, we define the task of teaser generation and provide an evaluation benchmark and baseline systems for the process of generating teasers. A teaser is a short reading suggestion for an article that is illustrative and includes curiosity-arousing elements to entice potential readers to read particular news items. Teasers are one of the main vehicles for transmitting news to social media users. We compile a novel dataset of teasers by systematically accumulating tweets and selecting those that conform to the teaser definition. We have compared a number of neural abstractive architectures on the task of teaser generation and the overall best performing system is See et al. seq2seq with pointer network.",
 }
 ```

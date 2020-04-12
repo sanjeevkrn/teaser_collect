@@ -3,14 +3,14 @@ certifi==2017.4.17
 chardet==3.0.4
 idna==2.5
 newspaper3k==0.2.8
-nltk==3.2.5
+nltk>=3.4.5
 oauthlib==2.0.2
 packaging==16.8
 pyparsing==2.1.10
 requests-oauthlib==0.8.0
 six>=1.10.0
 tweepy==3.8.0
-urllib3==1.21.1
+urllib3>=1.24.2
 pandas==1.0.3
 matplotlib==3.2.1
 sklearn

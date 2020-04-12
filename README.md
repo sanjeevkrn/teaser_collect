@@ -1,8 +1,8 @@
-## A data collector for Twitter newspaper tweets
+## News Article teaser tweet collector.
 
 Version: 0.2
 
-Downloads live tweets from a given list of Twitter accounts and downloads the news articles that the tweets link to.
+Downloads live tweets from a given list of Twitter accounts and downloads the news articles that the tweets link to. And, scripts to extract teasers from downloaded tweets.
 
 ### Dependencies
 
